@@ -1,0 +1,27 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	align-items: center;
+}
+
+.header__title {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.header__icon {
+	font-size: 20px;
+	margin-left: 20px;
+	cursor: pointer; /*링크가 있는 부분에는 커서가 화살표 모양이 되어야 한다는 의미 */
+}
+
+.header .header__header-column {
+	display: flex;
+	align-items: center;
+}
+
+.header .header__back-btn {
+	font-size: 22px;
+	margin-right: 20px;
+}

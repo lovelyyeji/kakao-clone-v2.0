@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Conpatible" content="ie=edge">
         <script src="https://kit.fontawesome.com/4c790582d4.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
         <title>More Kakako Clone</title>
     </head>
     <body>
@@ -12,12 +13,13 @@
             <div class="status-bar__column">
                 <span class="status-bar__clock">13:54</span>
             </div>
-            <div class="status-bar__column"></div>
-            <i class="far fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <span class="status-bar__battery-level">100%</span>
-            <i class="fas fa-battery-full"></i>
+            <div class="status-bar__column">
+                <i class="far fa-clock"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-wifi"></i>
+                <span class="status-bar__battery-level">100%</span>
+                <i class="fas fa-battery-full"></i>
+            </div>
         </div>
         <header class = "header">
             <div class = "header__header-column">
@@ -37,28 +39,28 @@
                 </span>
             </div>
         </header>
-        <main>
+        <main class="more">
             <header class = "more__header">
                 <div class = "friends__friend friend friend--lg">
-                    <div class = "friends__column">
-                    <img src = "images/avatar.jpg" class = "g.avatar"></img>
-                    <div class = "firend__content">
-                        <span class = "friend__name">
-                        Joung Ye Ji
-                        </span>
-                        <span class = "friend__status">
-                        jyt3572@naver.com
-                        </span>
+                    <div class = "friend__column">
+                        <img src = "images/avatar.jpg" class = "g.avatar friend__avatar"></img>
+                        <div class = "friend__content">
+                            <span class = "friend__name">
+                                예지
+                            </span>
+                            <span class = "friend__status">
+                            jyt3572@naver.com
+                            </span>
+                        </div>
                     </div>
-                    </div>
-                    <div class = "friends__column">
+                    <div class = "friend__column">
                         <i class = "far fa-comment-alt fa-2x"></i>
                     </div>
                 </div>
-                <ui class = "more_btn-list">
+                <div class = "more__btn-list">
                     <li class = "more__btn">
                         <span class = "more__btn-icon">
-                            <i class = "far fa-smail fa-2x"></i>
+                            <i class = "far fa-smile fa-2x"></i>
                         </span>
                         <span = "more_btn-title">
                             Emoticons
@@ -80,30 +82,31 @@
                             Account
                         </span>
                     </li>
-                </ui>
+                </div>
             </header>
             <section class="more__suggestions">
                 <h5 class ="more__title">Suggestions</h5>
                 <ui class="more__suggestions-list">
                     <li class="more__suggestion suggestion">
                         <span class="suggestion__icon">
-                            <i class="fas fa-quote-right fa-2x"></i>
+                            <i class="fas fa-quote-right"></i>
                         </span>
                         <span class="suggestion__title">Kakao Story</span>
                     </li>
                     <li class="more__suggestion suggestion">
                         <span class="suggestion__icon">
-                            <i class="fas fa-beer fa-2x"></i>
+                            <i class="fas fa-beer"></i>
                         </span>
                         <span class="suggestion__title">Kakao friends</span>
                     </li>
                     <li class="more__suggestion suggestion">
                         <span class="suggestion__icon">
-                            <i class="fas fa-gamepad fa-2x"></i>
+                            <i class="fas fa-gamepad"></i>
                         </span>
                         <span class="suggestion__title">Friends Gem</span>
                     </li>
-                </ui>            
+                </ui> 
+            </section>           
         </main>
         <nav class = "nav">
             <ui class = "nav_list">
@@ -113,8 +116,9 @@
                     </a>
                 </li>
                 <li class = "nav_list-item">
-                    <a href="./index.html" class="nav__list-item">
+                    <a href="./index.html" class="nav__list-link">
                         <i class="far fa-comment"></i>
+                        <div class="nav__badge">8</div>
                     </a>
                 </li>
                 <li class = "nav_list-item">
@@ -129,5 +133,10 @@
                 </li>
             </ui>
         </nav>
+        <div class="bigScreen">
+            <span class="bigScreen__text">
+                Please make your Screen small!
+            </span>
+        </div>
     </body>
 </html>

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Conpatible" content="ie=edge">
         <script src="https://kit.fontawesome.com/4c790582d4.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
         <title>Find Kakako Clone</title>
     </head>
     <body>
@@ -12,12 +13,13 @@
             <div class="status-bar__column">
                 <span class="status-bar__clock">13:54</span>
             </div>
-           <div class="status-bar__column"></ div>
-            <i class="far fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <span class="status-bar__battery-level">100%</span>
-            <i class="fas fa-battery-full"></i>
+           <div class="status-bar__column">
+                <i class="far fa-clock"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-wifi"></i>
+                <span class="status-bar__battery-level">100%</span>
+                <i class="fas fa-battery-full"></i>
+            </div>
         </div>
         <header class = "header">
             <div class = "header__header-column">
@@ -28,7 +30,9 @@
                     <i class = "fas fa-search"></i>
                 </span>
                 <span class = "header__icon">
-                    <i class = "fas fa-cog"></i>
+                    <a href="settings.html">
+                        <i class = "fas fa-cog"></i>
+                    </a>
                 </span>
             </div>
         </header>
@@ -75,16 +79,61 @@
                 </h5>
                 <li class = "find__friend friend friend--lg">
                     <div class = "friend__column">
-                    <img src = "images/Min.jpg" class = "g.avatar"></img>
+                    <img src = "images/sw.jpg" class = "friend__avatar"></img>
                     <div class = "friend__content">
                         <span class = "friend__name">
-                        Sheng hee
+                        승우
                         </span>
                     </div>
                     </div>
                     <div class = "friends__column">
                         <div class = "friend__add-btn">
-                        <i class = "fas fa-user-plus fa-2x"></i>
+                        <i class = "fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class = "find__friend friend friend--lg">
+                    <div class = "friend__column">
+                    <img src = "images/kang.jpg" class = "friend__avatar"></img>
+                    <div class = "friend__content">
+                        <span class = "friend__name">
+                        민이
+                        </span>
+                    </div>
+                    </div>
+                    <div class = "friends__column">
+                        <div class = "friend__add-btn">
+                        <i class = "fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class = "find__friend friend friend--lg">
+                    <div class = "friend__column">
+                    <img src = "images/young.jpg" class = "friend__avatar"></img>
+                    <div class = "friend__content">
+                        <span class = "friend__name">
+                        민영
+                        </span>
+                    </div>
+                    </div>
+                    <div class = "friends__column">
+                        <div class = "friend__add-btn">
+                        <i class = "fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class = "find__friend friend friend--lg">
+                    <div class = "friend__column">
+                    <img src = "images/h.jpg" class = "friend__avatar"></img>
+                    <div class = "friend__content">
+                        <span class = "friend__name">
+                        현민
+                        </span>
+                    </div>
+                    </div>
+                    <div class = "friends__column">
+                        <div class = "friend__add-btn">
+                        <i class = "fas fa-user-plus"></i>
                         </div>
                     </div>
                 </li>
@@ -99,7 +148,8 @@
                     </a>
                 </li>
                 <li class = "nav_list-item">
-                    <a href="./index.html" class="nav__list-item">
+                    <a href="./index.html" class="nav__list-link">
+                        <div class="nav__badge">8</div>
                         <i class="far fa-comment"></i>
                     </a>
                 </li>
@@ -115,5 +165,10 @@
                 </li>
             </ui>
         </nav>
+        <div class="bigScreen">
+            <span class="bigScreen__text">
+                Please make your Screen small!
+            </span>
+        </div>
     </body>
 </html>
